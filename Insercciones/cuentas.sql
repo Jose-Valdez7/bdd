@@ -35,3 +35,10 @@ values ('47584','89431','21/11/2019',323.11)
 
 insert into cuentas (numero_cuenta,cedula_propietario,fecha_creacion,saldo)
 values ('83493','83493','01/10/2020',10.59)
+
+select numero_cuenta,saldo from cuentas 
+
+select * from cuentas where fecha_creacion between '06/01/2024' and '06/03/2024'
+
+select numero_cuenta,saldo from cuentas where fecha_creacion between '06/01/2024' and '06/03/2024'
+

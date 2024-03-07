@@ -38,3 +38,8 @@ values (13,'09123',2676.66,'C','22/01/2024','13:55')
 insert into transaccciones (codigo,numero_cuenta,monto,tipo,fecha,hora)
 values (15,'78344',767.66,'D','29/01/2024','19:11')
 
+select * from transaccciones where tipo='D'
+
+select * from transaccciones where cast(monto as numeric) between 200 and 2000
+
+select codigo,monto,tipo,fecha from transaccciones where fecha is not null

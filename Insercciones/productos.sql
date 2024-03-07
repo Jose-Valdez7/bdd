@@ -31,4 +31,9 @@ values (22,'Pantalla SONY',90.82,23)
 insert into productos (codigo,nombre,precio,stock)
 values (11,'Tarjeta de video',324.11,5)
 
-select * from productos
+select * from productos where nombre like 'Q%'
+
+select * from productos where descripcion is null
+
+select * from productos where cast(precio as numeric) between 2 and 3
+

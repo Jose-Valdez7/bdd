@@ -30,3 +30,9 @@ values ('1231234563','Renato','Butilier','buti@gmail.com','19/07/1997')
 
 insert into estudiantes (cedula,nombre,apellido,email,fecha_nacimiento)
 values ('1231234562','Sandra','Vizuete','sand@gmail.com','05/09/1996')
+
+select nombre,cedula from estudiantes
+
+select nombre from estudiantes where cedula like '17%'
+
+select nombre,apellido from estudiantes where nombre like 'A%'

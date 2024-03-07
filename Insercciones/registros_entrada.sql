@@ -38,3 +38,9 @@ values (1290,'1290873640','19:34','27/12/2023')
 
 insert into registros_entrada (codigo_registro,cedula_empleado,hora,fecha)
 values (1200,'1290873605','20:49','28/12/2023')
+
+select cedula_empleado,fecha,hora from registros_entrada
+
+select * from registros_entrada where hora between '7:00' and '14:00'
+
+select * from registros_entrada where hora>'8:00'

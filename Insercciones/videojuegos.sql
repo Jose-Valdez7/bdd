@@ -29,3 +29,9 @@ values (34,'AMOUNG US',8)
 
 insert into videojuegos (codigo,nombre,valoracion)
 values (31,'ELDER RING',10)
+
+select * from videojuegos where nombre like 'C%'
+
+select * from videojuegos where valoracion between 9 and 10
+
+select * from videojuegos where descripcion is null
