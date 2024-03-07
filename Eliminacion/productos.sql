@@ -6,3 +6,7 @@ create table productos(
 	stock int not null,
 	constraint productos_pk primary key(codigo)
 )
+
+select * from productos
+
+delete from productos where descripcion is null

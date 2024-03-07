@@ -7,3 +7,8 @@ create table transaccciones(
 	hora time not null,
 	constraint transaccciones_pk primary key(codigo)
 )
+
+select * from transaccciones
+
+delete from transaccciones where hora between '14:00' and '18:00'
+and fecha between '01/08/2024' and '31/08/2024'

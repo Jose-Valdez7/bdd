@@ -6,4 +6,6 @@ create table cuentas(
 	constraint cuentas_pk primary key(numero_cuenta)
 )
 
+select * from cuentas
 
+delete from cuentas where cedula_propietario like '10%'
