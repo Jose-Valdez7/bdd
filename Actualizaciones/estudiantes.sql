@@ -6,3 +6,7 @@ create table estudiantes(
 	fecha_nacimiento date not null,
 	constraint estudiantes_pk primary key(cedula)
 )
+
+select * from estudiantes
+
+update estudiantes set apellido='Hernandez' where cedula like '17%'
