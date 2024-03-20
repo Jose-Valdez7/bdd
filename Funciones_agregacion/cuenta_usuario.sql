@@ -22,11 +22,13 @@ add constraint cuentas_usuario_fk
 foreign key (cedula_propietario)
 references usuario(cedula)
 
+select * from usuario
 
-select cu.numero_cuenta, us.nombre from cuentas cu,usuario us
+select AVG(cast(cu.saldo as numeric))
+from cuentas cu,usuario us
 where cu.cedula_propietario=us.cedula
-and cu.saldo between money(100.00) and money(1000.00)
+and us.cedula='09850'
 
-select cu.numero_cuenta,cu.fecha_creacion,cu.saldo, us.cedula from cuentas cu,usuario us
-where cu.cedula_propietario=us.cedula
-and cu.fecha_creacion between '21/09/2022' and '21/09/2023'
+select us.tipo_cuenta, count(*)
+from usuario us
+group by us.tipo_cuenta
